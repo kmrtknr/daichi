@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.icon-button {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-button.primary {
+  background-color: #aaaaaa;
+}
+
+.icon-button.silent {
+  background-color: transparent;
+}
+
+.icon-button:hover {
+  background-color: #cccccc;
+}
+
+.icon-button:active {
+  background-color: #aaaaaa;
+}
+
+.text-button {
+  background-color: #eeeeee;
+  color: #000000;
+  font-weight: bolder;
+  height: 40px;
+  min-width: 100px;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 26px;
+  border: transparent 2px solid;
+}
+
+.text-.primary {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.text-.silent {
+  background-color: transparent;
+  color: #000000;
+  border: #cccccc 1px solid;
+}
+
+.text-button:hover {
+  background-color: #cccccc;
+}
+
+.text-button:active {
+  background-color: #aaaaaa;
+}
+
+.text-button:focus {
+  background-color: #ffffff;
+  border: #000000 2px solid;
+  color: #000000;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.message {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+  background-color: rgb(7, 218, 218);
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+.warn {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 10px;
+  padding: 5px 20px;
+  background-color: rgb(202, 202, 0);
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+hr {
+  width: 90%;
+  height: 2px;
+  border: 2px solid #cccccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.page {
+  max-width: 1000px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .page {
+    width: 100%;
+  }
+}
+article {
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-selector {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+form.line {
+  max-width: 400px;
+  width: 100%;
+  padding: 2px;
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  gap: 10px;
+  align-items: center;
+}
+form.line > p {
+  align-items: center;
+}
+
+p.input {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+}
+
+p.input label {
+  height: 40px;
+  text-align: right;
+  border: 2px solid #aaaaaa;
+  border-right: 0;
+  border-radius: 20px 0 0 20px;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p.input input {
+  width: 100%;
+  height: 40px;
+  border: 2px solid #aaaaaa;
+  border-radius: 0 20px 20px 0;
+  padding-left: 10px;
+}
+
+p.input-s {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+}
+p.input-s input {
+  width: 100%;
+}
+
+p.input label {
+  height: 40px;
+  text-align: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p.input input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+}
+
+label {
+  text-align: left;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+input {
+  width: 200px;
+  height: 40px;
+  border: 2px solid #aaaaaa;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+textarea {
+  width: 500px;
+  height: 300px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+@media screen and (max-width: 600px) {
+  table {
+    font-size: 0.8rem;
+  }
+}
+
+th {
+  background-color: #eeeeee;
+}
+
+th,
+td {
+  border: 1px solid #aaaaaa;
+  padding: 10px;
+}
+@media screen and (max-width: 600px) {
+  th,
+  td {
+    padding: 3px;
+  }
+}
+
+dl {
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  justify-content: center;
+  row-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .sp-padding {
+    padding-left: 10px;
+  }
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}/*# sourceMappingURL=style.css.map */
